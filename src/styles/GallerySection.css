@@ -1,0 +1,71 @@
+.gallery-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #F0EEF3;
+  overflow: hidden;
+}
+
+.gallery-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #34404a;
+  margin-bottom: 20px;
+}
+
+.gallery-section p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.gallery-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three-column layout */
+  grid-template-rows: repeat(3, auto); /* Allows for different image heights */
+  gap: 10px; /* Adjust the gap between images */
+  justify-items: center; /* Center the images */
+}
+
+/* Styling for individual images */
+.gallery-imgs {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-imgs:hover {
+  transform: scale(1.01); /* Subtle zoom effect on hover */
+}
+
+/* Individual image adjustments */
+.img1 {
+  grid-area: 1 / 1 / 2 / 3; /* Spans two columns */
+  height: 350px;
+}
+
+.img2 {
+  grid-area: 1 / 3 / 2 / 4; /* Single image in third column */
+  height: 350px;
+}
+
+.img3 {
+  grid-area: 2 / 1 / 4 / 2; /* Spans two rows */
+  height: 620px;
+}
+
+.img4 {
+  grid-area: 2 / 2 / 3 / 3; /* Single image */
+  height: 300px;
+}
+
+.img5 {
+  grid-area: 3 / 2 / 4 / 3; /* Single image */
+  height: 300px;
+}
+
+.img6 {
+  grid-area: 2 / 3 / 4 / 4; /* Spans two rows */
+  height: 620px;
+}

@@ -1,0 +1,107 @@
+.vision-expertise-section {
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+  padding: 60px 20px;
+  background-color: #F0EEF3;
+  min-height: 500px; /* Ensure enough vertical space */
+  overflow: hidden;
+}
+
+.vision-content {
+  width: 30%;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 70px;
+}
+
+.vision-content h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #34404a;
+  margin-bottom: 20px;
+}
+
+.vision-content p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.consultation-button {
+  padding: 15px 30px;
+  background-color: #6C8462;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.consultation-button:hover {
+  background-color: #5a6e50;
+}
+
+.vision-images {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.image-container {
+  position: relative;
+  flex:0 1 auto;
+  margin: 0 10px;
+  overflow-x: hidden;
+}
+
+.gallery-image {
+  border-radius: 10px;
+  object-fit: cover;
+  width: 70%;
+  height: auto;
+  /* display: block; */
+}
+
+.image-container-1 {
+  z-index: 3; /* Bring this image to the front */
+  top: 50px;
+  left: 60px;
+}
+
+.image-container-2 {
+  /* margin-left: -50px;  */
+  z-index: 2; /* Middle layer */
+  left: 100px;
+  top: -80px;
+}
+
+.image-container-3 {
+  /* margin-left: -50px;  */
+  z-index: 1; /* Back layer */
+  left: 130px;
+  top: -180px;
+}
+
+/* .next-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.next-button button {
+  padding: 10px 20px;
+  background-color: #F4F1ED;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.next-button button:hover {
+  background-color: #e2dfdb;
+} */

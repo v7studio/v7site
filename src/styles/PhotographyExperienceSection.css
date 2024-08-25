@@ -1,0 +1,125 @@
+.experience-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #f7f7f7;
+    width: 100%; /* Prevent horizontal scroll */
+    overflow: hidden;
+  }
+  
+  .experience-images {
+    flex: 1;
+    max-width: 50%;
+    position: relative;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    position: relative;
+  }
+  
+  .card {
+    position: absolute;
+    background-color: #f7f7f7; /* Match the background color */
+    border-radius: 10px;
+  }
+  
+  .card-1 {
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    clip-path: circle(30% at 50% 50%);
+  }
+  
+  .card-2 {
+    top: 140px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    clip-path: circle(40% at 50% 50%);
+  }
+  
+  .card-3 {
+    top: 260px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    clip-path: circle(30% at 50% 50%);
+  }
+  
+  .card-4 {
+    top: 80px;
+    left: 140px;
+    width: 150px;
+    height: 150px;
+    clip-path: inset(20% 20% round 20px);
+  }
+  
+  .card-5 {
+    top: 240px;
+    left: 180px;
+    width: 100px;
+    height: 100px;
+    clip-path: circle(30% at 50% 50%);
+  }
+  
+  .card-6 {
+    top: 300px;
+    left: 100px;
+    width: 50px;
+    height: 50px;
+    clip-path: circle(50% at 50% 50%);
+  }
+  
+  .experience-content {
+    flex: 1;
+    max-width: 45%;
+    padding-left: 40px;
+  }
+  
+  .experience-content h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #8ebf42;
+    margin-bottom: 10px;
+  }
+  
+  .experience-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #34404a;
+    margin-bottom: 20px;
+  }
+  
+  .experience-content p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  .cta-button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #748d75;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cta-button:hover {
+    background-color: #62715f;
+  }
+  

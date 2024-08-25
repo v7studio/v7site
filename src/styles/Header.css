@@ -1,0 +1,116 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 20px;
+  background-color: #F0EEF3;
+  width: 100%;
+  position: relative;
+  gap: 20px;
+}
+
+.logo img {
+  max-height: 60px;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: #4c5b69;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.navigation ul li a.active {
+  color: #34404a;
+  font-weight: bold;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hire-us-button {
+  padding: 10px 20px;
+  border: 2px solid #a4b7a6;
+  border-radius: 15px;
+  color: #8b9f8e;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  z-index: 10;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #4c5b69;
+  border-radius: 2px;
+}
+
+@media screen and (max-width: 768px) {
+  .navigation {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #F0EEF3;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Increased gap for better spacing */
+    padding: 20px 0; /* Added padding for better spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for visual separation */
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 9; /* Ensure it's above other elements */
+  }
+
+  .navigation ul {
+    flex-direction: column; /* Stack menu items vertically */
+    width: 100%;
+    align-items: center;
+    padding: 0; /* Reset padding */
+    margin: 0; /* Reset margin */
+  }
+
+  .navigation ul li {
+    width: 100%; /* Full width for each item */
+    text-align: center; /* Center-align the text */
+    padding: 10px 0; /* Added padding for touch-friendly size */
+  }
+
+  .navigation ul li a {
+    font-size: 18px; /* Increase font size for mobile */
+    padding: 10px 0;
+    width: 100%; /* Full width clickable area */
+    display: block;
+    color: #4c5b69;
+  }
+
+  .navigation.open {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .header-buttons {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
