@@ -127,7 +127,7 @@
 }
 
 .unique-crafting-image {
-  width: 100%;
+  width: 50%;
   max-width: 400px;
   height: auto;
   border-radius: 5px;
@@ -135,14 +135,14 @@
 
 .unique-crafting-image-1 {
   position: absolute;
-  top: 0;
+  top: 200px;
   right: -50px;
 }
 
 .unique-crafting-image-2 {
   position: absolute;
-  bottom: -50px;
-  right: 0;
+  bottom: -450px;
+  right: 280px;
 }
 
 /* Media Queries */
