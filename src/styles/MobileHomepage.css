@@ -1,0 +1,324 @@
+/* Global Styles */
+body {
+    font-family: 'Arial, sans-serif';
+    margin: 0;
+    padding: 0;
+    background-color: #F0EEF3;
+    color: #333;
+}
+
+.mh-container {
+    padding: 0;
+    background-color: #F0EEF3;
+}
+
+/* Section Styles */
+section {
+    margin: 0;
+    padding: 0px;
+    background-color: #F0EEF3;
+    box-shadow: none;
+}
+
+/* Hero Section */
+.mh-hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #F0EEF3;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.mh-hero-content h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+    line-height: 1.3;
+}
+
+.mh-hero-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.7;
+    color: #555;
+}
+
+.mh-cta-button {
+    padding: 14px 28px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #0984e3;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.mh-cta-button:hover {
+    background-color: #74b9ff;
+    transform: translateY(-3px);
+}
+
+.mh-hero-image {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.mh-main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Experience Section */
+.mh-experience-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #F0EEF3;
+    position: relative;
+}
+
+.mh-experience-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.mh-experience-content p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.mh-experience-image {
+    margin: 15px 0;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.mh-experience-section button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #00b894;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.mh-experience-section button:hover {
+    background-color: #55efc4;
+    transform: translateY(-3px);
+}
+
+/* Expertise Section */
+.mh-expertise-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #F0EEF3;
+    overflow-x: scroll; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent line breaks to make items stay in a single row */
+    scroll-behavior: smooth; /* Smooth scrolling behavior */
+}
+
+.mh-expertise-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.mh-expertise-cards {
+    display: inline-flex; /* Inline flex to keep items in a single row */
+    gap: 10px;
+    padding-bottom: 10px; /* Space for scrolling */
+}
+
+.mh-expertise-card {
+    background-color: #F0EEF3;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    min-width: 200px; /* Ensure minimum width for each card */
+}
+
+.mh-expertise-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.mh-expertise-card img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.mh-expertise-card h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Creativity Section */
+.mh-creativity-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #F0EEF3;
+}
+
+.mh-creativity-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.mh-creativity-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.mh-gallery-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Vision Expertise Section */
+.mh-vision-expertise-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #F0EEF3;
+    color: #333;
+}
+
+.mh-vision-expertise-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.mh-vision-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.mh-vision-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.mh-vision-expertise-section p {
+    margin-top: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.mh-vision-expertise-section button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #6c5ce7;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+.mh-vision-expertise-section button:hover {
+    background-color: #a29bfe;
+    transform: translateY(-3px);
+}
+
+/* Gallery Section */
+.mh-gallery-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #F0EEF3;
+    color: #333;
+}
+
+.mh-gallery-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.mh-gallery-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.mh-gallery-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .mh-hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .mh-cta-button,
+    .mh-experience-section button,
+    .mh-vision-expertise-section button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .mh-experience-section h2,
+    .mh-creativity-section h2,
+    .mh-vision-expertise-section h2,
+    .mh-gallery-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .mh-expertise-cards img {
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mh-hero-content h1 {
+        font-size: 1.6rem;
+    }
+
+    .mh-cta-button,
+    .mh-experience-section button,
+    .mh-vision-expertise-section button {
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+
+    .mh-experience-section h2,
+    .mh-creativity-section h2,
+    .mh-vision-expertise-section h2,
+    .mh-gallery-section h2 {
+        font-size: 1.4rem;
+    }
+
+    .mh-expertise-cards {
+        display: flex; /* Adjust for mobile view */
+        overflow-x: auto; /* Enable horizontal scrolling on smaller screens */
+    }
+
+    .mh-expertise-card {
+        min-width: 150px; /* Smaller minimum width for mobile view */
+    }
+}

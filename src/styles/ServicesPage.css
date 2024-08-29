@@ -1,0 +1,118 @@
+.services-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+  font-family: 'Playfair Display', serif;
+  padding: 40px 20px;
+  color: #004d4d; /* Use a color that matches the design */
+}
+
+.hero-sections {
+  background-image: url('../assets/10.jpg'); /* Replace with your hero image path */
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.hero-sections h2 {
+  font-size: 2rem;
+  color: #78f8f8;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.hero-sections h1{
+  color: #78f8f8;
+}
+
+.packages-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.package {
+  background-color: #ffffff;
+  padding: 20px;
+  border-left: 5px solid #f7941d; /* Accent color based on the image */
+  margin-bottom: 20px;
+}
+
+.package h3 {
+  font-size: 1.8rem;
+  color: #004d4d;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.package p {
+  font-size: 1rem;
+  color: #004d4d;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.package h3 span {
+  color: #f7941d; /* Accent color for pricing */
+  font-size: 2rem;
+}
+
+.notes-section {
+  margin-top: 40px;
+}
+
+.notes-section h4 {
+  font-size: 1.5rem;
+  color: #004d4d;
+  margin-bottom: 10px;
+}
+
+.notes-section p {
+  font-size: 1rem;
+  color: #004d4d;
+  margin-bottom: 5px;
+}
+
+.cta-sectionz {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.cta-buttonz {
+  padding: 15px 30px;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #004d4d;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-buttonz:hover {
+  background-color: #f7941d;
+}
+
+.contact-info {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #004d4d;
+}
+
+.contact-info span {
+  display: inline-block;
+  margin-right: 10px;
+}

@@ -28,7 +28,7 @@
   grid-row: 1 / span 2; */
   width: 20%;
   height: 55%;
-  bottom: -1890px;
+  bottom: -1950px;
 
 }
 
@@ -37,7 +37,7 @@
   grid-column: 3 / span 1;
   grid-row: 1 / span 1;
   left: 143px;
-  bottom: -1885px;
+  bottom: -1945px;
   width: 11%;
   height: 23%;
   z-index: 5;
@@ -55,7 +55,7 @@
   grid-row: 1 / span 1;
   color: #090909;
   left: 132px;
-  bottom: -1890px;
+  bottom: -1950px;
   width: 12.5%;
   height: 25%;
 }
@@ -65,7 +65,7 @@
   grid-column: 3 / span 1;
   grid-row: 2 / span 2;
   left: 335px;
-  bottom: -1890px;
+  bottom: -1950px;
   width: 13%;
   height: 55%;
 }
@@ -73,14 +73,14 @@
 /* Fourth and fifth images in the last row */
 .gallery-img4 {
   width: 13%;
-  bottom: -1890px;
+  bottom: -1950px;
   right: 738px;
   height: 27%;
 }
 
 .gallery-img5 {
   width: 13%;
-  bottom: -1670px;
+  bottom: -1730px;
   right: 738px;
   height: 27%;
 }
@@ -97,7 +97,7 @@
 
 .empty-cards {
   background-color: #F0EEF3;
-  border-radius: 10px 0px 0px 0px;
+  border-radius: 0px 0px 0px 10px;
   /* box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); */
   position: absolute;
 }
@@ -105,7 +105,7 @@
 .empty-card-t{
   width: 45.2%;
   height: 33%;
-  top: 2220px;
+  top: 2290px;
 }
 
 .creativity-content {

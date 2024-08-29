@@ -2,7 +2,6 @@
   padding: 60px 20px;
   background-color: #F0EEF3;
   text-align: center;
-  overflow: hidden;
 }
 
 .expertise-section h2 {
@@ -12,12 +11,28 @@
   margin-bottom: 40px;
 }
 
+.expertise-carousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding-bottom: 20px;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.expertise-carousel::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari, and Opera */
+}
+
 .expertise-card {
   background-color: #F0EEF3;
   border-radius: 10px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  max-width: 100%;
+  min-width: 280px;
+  scroll-snap-align: start;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -46,51 +61,25 @@
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Swiper-specific styles */
-.swiper-container {
-  width: 100%;
+/* Visual Cues for Scrolling */
+.expertise-carousel::before,
+.expertise-carousel::after {
+  content: '';
+  display: block;
+  width: 50px;
   height: 100%;
+  position: absolute;
+  top: 0;
+  pointer-events: none;
+  background: linear-gradient(to right, rgba(240, 238, 243, 1), rgba(240, 238, 243, 0));
+  z-index: 1;
 }
 
-
-.swiper-button-next,
-.swiper-button-prev {
-  color: #34404a;
+.expertise-carousel::after {
+  right: 0;
+  transform: rotate(180deg);
 }
 
-.swiper-pagination-bullet-active {
-  background-color: #34404a;
-}
-
-/* Responsive adjustments */
-@media screen and (max-width: 768px) {
-  .expertise-section h2 {
-    font-size: 2rem;
-  }
-
-  .expertise-card {
-    padding: 15px;
-  }
-
-  .expertise-card h3 {
-    font-size: 1.2rem;
-  }
-
-  .expertise-card p {
-    font-size: 0.9rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .expertise-section h2 {
-    font-size: 1.8rem;
-  }
-
-  .expertise-card h3 {
-    font-size: 1.1rem;
-  }
-
-  .expertise-card p {
-    font-size: 0.85rem;
-  }
+.expertise-carousel::before {
+  left: 0;
 }

@@ -1,0 +1,189 @@
+.unique-about-page {
+  font-family: 'Times New Roman', serif;
+  color: #333;
+  background-color: #F0EEF3;
+  padding: 20px;
+}
+
+.unique-my-story-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #F0EEF3;
+}
+
+.unique-content-wrapper {
+  display: flex;
+  align-items: flex-start;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.unique-image-container {
+  flex: 1;
+}
+
+.unique-profile-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.unique-text-container {
+  flex: 1.5;
+  max-width: 600px;
+}
+
+.unique-about-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.unique-about-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.unique-portfolio-button {
+  padding: 15px 30px;
+  font-size: 1rem;
+  background-color: #d3b79b;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.unique-portfolio-button:hover {
+  background-color: #b6967f;
+}
+
+/* Crafting Memories Section */
+.unique-crafting-memories-section {
+  padding: 50px 0;
+  background-color: #ffffff;
+}
+
+.unique-crafting-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.unique-crafting-text-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.unique-section-title {
+  font-size: 1.5rem;
+  color: #d3b79b;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.unique-section-subtitle {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.unique-crafting-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  background-color: #F0EEF3;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.unique-book-now-button {
+  padding: 15px 30px;
+  font-size: 1rem;
+  background-color: #d3b79b;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.unique-book-now-button:hover {
+  background-color: #b6967f;
+}
+
+.unique-crafting-images {
+  flex: 1;
+  position: relative;
+}
+
+.unique-crafting-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.unique-crafting-image-1 {
+  position: absolute;
+  top: 0;
+  right: -50px;
+}
+
+.unique-crafting-image-2 {
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+  .unique-content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .unique-image-container, .unique-text-container {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .unique-profile-image {
+    margin-bottom: 20px;
+  }
+
+  .unique-about-title {
+    text-align: center;
+  }
+
+  .unique-crafting-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .unique-crafting-images {
+    position: static;
+    margin-top: 20px;
+  }
+
+  .unique-crafting-image-1,
+  .unique-crafting-image-2 {
+    position: relative;
+    right: auto;
+    top: auto;
+    bottom: auto;
+  }
+
+  .unique-crafting-image-1 {
+    margin-bottom: 20px;
+  }
+}

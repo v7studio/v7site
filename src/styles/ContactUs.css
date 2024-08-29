@@ -1,132 +1,279 @@
+/* Global Styles */
 .contact-page {
-    background-color: #F0EEF3;
-  }
-  
-  .contact-hero-section {
-    background-image: url('/src/assets/1.jpg'); /* Replace with your image path */
-    background-size: cover;
-    background-position: center;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-  }
-  
-  .contact-hero-section h1 {
-    font-size: 4rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-  }
-  
-  .contact-hero-section p {
-    font-size: 1.5rem;
-    font-weight: 300;
-  }
-  
+  background-color: #F0EEF3;
+  font-family: 'Poppins', sans-serif; /* A more elegant font choice */
+}
+
+/* Hero Section */
+.contact-hero-section {
+  background-image: url('/src/assets/1.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Make the hero section cover the full viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.contact-hero-section h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4); /* Add subtle text shadow for better readability */
+}
+
+.contact-hero-section p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: 10px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Add subtle text shadow for better readability */
+}
+
+/* Contact Details Section */
+.contact-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px auto;
+  max-width: 1200px;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 20px; /* Increased border radius for a softer, more luxurious feel */
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1); /* Stronger shadow for more depth */
+}
+
+.contact-info {
+  flex: 1;
+  margin-right: 40px;
+  padding: 20px;
+  border-right: 2px solid #e0e0e0; /* Thicker border for a more defined separation */
+}
+
+.contact-info h2 {
+  font-size: 2.8rem; /* Larger font size for a more prominent heading */
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-weight: 700; /* Bolder font weight */
+}
+
+.contact-info p {
+  font-size: 1.2rem; /* Slightly larger font size */
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.info-item i {
+  font-size: 1.8rem; /* Slightly larger icons */
+  color: #748d75;
+  margin-right: 15px;
+}
+
+/* Contact Form Section */
+.contact-form {
+  flex: 1;
+  padding: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.form-row input, .form-row textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 15px; /* Increased border radius for a softer look */
+  font-size: 1rem;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.form-row input:focus, .form-row textarea:focus {
+  border-color: #748d75;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Stronger shadow on focus */
+}
+
+textarea {
+  height: 150px;
+  resize: none;
+}
+
+.submit-button {
+  padding: 15px;
+  background-color: #748d75;
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 15px; /* Increased border radius for a more luxurious feel */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-align: center;
+  width: 100%;
+}
+
+.submit-button:hover {
+  background-color: #62715f;
+  transform: translateY(-3px); /* Slightly more pronounced lift on hover */
+}
+
+.submit-button:active {
+  transform: translateY(0);
+}
+
+/* Success and Error Messages */
+.success-message, .error-message {
+  font-size: 1.1rem; /* Slightly larger font size */
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* Contact Map Section */
+.contact-map {
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* Media Queries for Mobile View */
+@media (max-width: 992px) {
   .contact-details {
-    display: flex;
-    justify-content: space-between;
-    margin: 40px auto;
-    max-width: 1200px;
-    padding: 40px;
-    background-color: #ffffff;
-    border-radius: 15px; /* Increase border radius for softer corners */
-    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.1); /* Stronger shadow for more depth */
+      flex-direction: column;
+      padding: 20px;
   }
-  
+
   .contact-info {
-    flex: 1;
-    margin-right: 40px;
-    padding: 20px;
-    border-right: 1px solid #e0e0e0; /* Add a subtle border for separation */
+      margin-right: 0;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-right: none;
+      border-bottom: 2px solid #e0e0e0; /* Adjust border for mobile view */
   }
-  
-  .contact-info h2 {
-    font-size: 2.5rem; /* Slightly larger font size */
-    color: #34404a;
-    margin-bottom: 20px;
-    font-weight: bold;
-  }
-  
-  .contact-info p {
-    font-size: 1.1rem; /* Increase font size */
-    color: #555;
-    margin-bottom: 20px;
-    line-height: 1.8; /* Increase line-height for better readability */
-  }
-  
-  .info-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-  }
-  
-  .info-item i {
-    font-size: 1.7rem;
-    color: #748d75;
-    margin-right: 15px;
-  }
-  
+
   .contact-form {
-    flex: 1;
-    padding: 20px;
+      padding: 0;
   }
-  
-  .contact-form form {
+
+  .form-row {
+      flex-direction: column;
+      gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-hero-section {
+      height: 60vh; /* Adjust height for smaller mobile screens */
+      padding: 0 20px;
+  }
+
+  .contact-hero-section h1 {
+      font-size: 3rem;
+  }
+
+  .contact-hero-section p {
+      font-size: 1.3rem;
+  }
+
+  .contact-details {
+    flex-direction: column;
+    align-items: center; /* Center the form elements */
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 95%;
+  }
+
+  .contact-form {
+    width: 100%; /* Ensure the form takes up the full width */
+    padding: 0;
     display: flex;
     flex-direction: column;
+    align-items: center; /* Center the form fields */
   }
-  
+
   .form-row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    gap: 20px; /* Add gap between form fields */
+    flex-direction: column;
+    gap: 10px;
+    width: 100%; /* Make sure the inputs are full width */
   }
-  
+
   .form-row input, .form-row textarea {
-    width: 100%;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 10px; /* Increase border radius */
+    width: 100%; /* Full width for inputs */
+    padding: 12px;
     font-size: 1rem;
-    color: #333;
-    transition: all 0.3s ease; /* Smooth transition for hover/focus */
+    box-sizing: border-box; /* Include padding in width calculation */
   }
-  
-  .form-row input:focus, .form-row textarea:focus {
-    border-color: #748d75; /* Change border color on focus */
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Add shadow on focus */
-  }
-  
-  textarea {
-    height: 150px;
-    resize: none;
-    width: 100%;
-  }
-  
+
   .submit-button {
-    padding: 15px;
-    background-color: #748d75;
-    color: #fff;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transform transition */
-    text-align: center;
-    width: 100%;
+    width: 100%; /* Full width for button */
+    padding: 12px;
+    font-size: 1.1rem;
+    margin-top: 10px;
   }
-  
-  .submit-button:hover {
-    background-color: #62715f;
-    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+@media (max-width: 480px) {
+  .contact-hero-section {
+      height: 50vh; /* Further reduce height for very small screens */
+      padding: 0 15px;
   }
-  
-  .submit-button:active {
-    transform: translateY(0); /* Reset on click */
-  }  
-  
+
+  .contact-hero-section h1 {
+      font-size: 2.5rem;
+  }
+
+  .contact-hero-section p {
+      font-size: 1.1rem;
+  }
+
+  .contact-details {
+      margin: 10px auto;
+      padding: 15px;
+      max-width: 98%;
+  }
+
+  .contact-info h2 {
+      font-size: 1.8rem;
+  }
+
+  .contact-info p {
+      font-size: 1rem;
+  }
+
+  .info-item i {
+      font-size: 1.5rem;
+  }
+
+  .form-row input, .form-row textarea {
+      padding: 10px;
+      font-size: 0.9rem;
+  }
+
+  .submit-button {
+      padding: 10px;
+      font-size: 1rem;
+  }
+
+  .success-message, .error-message {
+      font-size: 1rem;
+  }
+
+  .contact-map {
+      margin-top: 20px;
+  }
+}

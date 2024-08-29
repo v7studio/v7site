@@ -1,57 +1,52 @@
 import React from 'react';
-import '../styles/AboutSection.css'; 
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import '../styles/AboutPage.css'; // Updated CSS file name
+import ProfileImg from '../assets/8.1.jpg';
+import Img1 from '../assets/8.jpg'; // Replace with actual image paths
+import Img2 from '../assets/9.jpg';
 
-import aboutMainImage from '../assets/23.jpg';
-import aboutSecondaryImage1 from '../assets/5.jpg';
-import aboutSecondaryImage2 from '../assets/6.jpg';
-import aboutSecondaryImage3 from '../assets/8.jpg';
-import aboutSecondaryImage4 from '../assets/5.jpg';
-import aboutSecondaryImage5 from '../assets/8.jpg';
-
-const AboutSection = () => {
+const AboutPage = () => {
   return (
-    <section className="about-v7studio-section">
-      {/* Hero Section */}
-      <div className="about-v7studio-hero-section">
-        <h1>My Story</h1>
-      </div>
-
-      {/* My Story Section */}
-      <div className="about-v7studio-my-story">
-        <div className="about-v7studio-text-content">
-          <h2>About Me</h2>
-          <p>
-            At V Studios, we specialize in capturing life's most cherished moments 
-            and turning them into timeless works of art. Our team of passionate 
-            photographers is dedicated to telling stories through the lens, ensuring 
-            that every shot encapsulates the essence of your unique journey.
-          </p>
-          <button className="about-v7studio-btn">View Portfolio</button>
+    <div className="unique-about-page">
+      <section className="unique-my-story-section">
+        <div className="unique-content-wrapper">
+          <div className="unique-image-container">
+            <img src={ProfileImg} alt="Profile" className="unique-profile-image" />
+          </div>
+          <div className="unique-text-container">
+            <h1 className="unique-about-title">My Story</h1>
+            <p className="unique-about-text">
+              Lorem ipsum dolor sit amet consectetur. Rutrum tincidunt consequat nec potenti. Justo molestie amet vulputate aliquam viverra ut viverra lorem.
+              Velit tellus vitae massa sed egestas ornare pretium. Donec odio faucibus consectetur feugiat varius.
+            </p>
+            <button className="unique-portfolio-button">View Portfolio</button>
+          </div>
         </div>
-        <LazyLoadImage src={aboutMainImage} alt="Main Photography" effect="blur" className="about-v7studio-main-image" />
-      </div>
+      </section>
+      
+      <section className="unique-crafting-memories-section">
+        <div className="unique-crafting-content">
+          <div className="unique-crafting-text-container">
+            <h2 className="unique-section-title">Crafting Memories</h2>
+            <h3 className="unique-section-subtitle">Your Story, My Lens</h3>
+            <p className="unique-crafting-text">
+              Your wedding day is a once-in-a-lifetime event, and choosing the right photographer is essential to preserving its magic for years to come.
+              I would be honored to be a part of your special day.
+            </p>
 
-      {/* Image Grid Section */}
-      <div className="about-v7studio-image-grid">
-        <LazyLoadImage src={aboutSecondaryImage1} alt="Photography 1" effect="blur" className="about-v7studio-grid-image" />
-        <LazyLoadImage src={aboutSecondaryImage2} alt="Photography 2" effect="blur" className="about-v7studio-grid-image" />
-        <LazyLoadImage src={aboutSecondaryImage3} alt="Photography 3" effect="blur" className="about-v7studio-grid-image" />
-        <LazyLoadImage src={aboutSecondaryImage4} alt="Photography 4" effect="blur" className="about-v7studio-grid-image" />
-        <LazyLoadImage src={aboutSecondaryImage5} alt="Photography 5" effect="blur" className="about-v7studio-grid-image" />
-      </div>
-
-      {/* Crafting Memories Section */}
-      <div className="about-v7studio-crafting-memories">
-        <h2>Crafting Memories</h2>
-        <p>Your Story, My Lens</p>
-        <div className="about-v7studio-memories-content">
-          <p>Your wedding day is a once-in-a-lifetime event, and choosing the right photographer is essential to preserving its magic for years to come. I would be honored to be a part of your special day.</p>
-          <button className="about-v7studio-btn">Book Now</button>
+            <p className="unique-crafting-text">
+              Your wedding day is a once-in-a-lifetime event, and choosing the right photographer is essential to preserving its magic for years to come.
+              I would be honored to be a part of your special day.
+            </p>
+            <button className="unique-book-now-button">Book Now</button>
+          </div>
+          <div className="unique-crafting-images">
+            <img src={Img1} alt="Wedding 1" className="unique-crafting-image unique-crafting-image-1" />
+            <img src={Img2} alt="Wedding 2" className="unique-crafting-image unique-crafting-image-2" />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
-}
+};
 
-export default AboutSection;
+export default AboutPage;

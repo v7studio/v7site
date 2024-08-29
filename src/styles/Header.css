@@ -62,6 +62,12 @@
 }
 
 @media screen and (max-width: 768px) {
+  .header {
+    flex-direction: row; /* Ensures the header elements are in a row */
+    justify-content: space-between; /* Adjust space between logo and hamburger */
+    padding: 10px; /* Adjust padding for smaller screens */
+    width: auto;
+  }
   .navigation {
     position: absolute;
     top: 60px;
@@ -85,6 +91,7 @@
     align-items: center;
     padding: 0; /* Reset padding */
     margin: 0; /* Reset margin */
+    gap: 10px;
   }
 
   .navigation ul li {

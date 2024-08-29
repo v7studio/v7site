@@ -1,0 +1,122 @@
+.portfolio-page .hero-section {
+    background-image: url('../assets/10.jpg'); /* Replace with your hero image */
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+.portfolio-page .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.portfolio-page .image-item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.portfolio-page .image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-page .image-item:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-page .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.portfolio-page .image-item:hover .overlay {
+    opacity: 1;
+}
+
+.portfolio-page .wedding-package {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f8f9fc;
+}
+
+.portfolio-page .wedding-package h2 {
+    font-size: 2rem;
+    color: #34404a;
+    margin-bottom: 20px;
+}
+
+.portfolio-page .wedding-package h3 {
+    font-size: 1.5rem;
+    color: #748d75;
+    margin-bottom: 40px;
+}
+
+.portfolio-page .package-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.portfolio-page .package-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.portfolio-page .package-card h4 {
+    font-size: 1.2rem;
+    color: #34404a;
+    margin-bottom: 10px;
+}
+
+.portfolio-page .package-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.portfolio-page .package-card.popular {
+    border: 2px solid #748d75;
+}
+
+.portfolio-page .package-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #748d75;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.portfolio-page .package-btn:hover {
+    background-color: #62715f;
+}
