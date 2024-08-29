@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
+import Logo from '../assets/logo.png';
+
 import '../styles/Header.css';
 
 const Header = () => {
@@ -24,7 +26,7 @@ const Header = () => {
 
       <header className="header">
         <div className="logo">
-          <img src="/path-to-your-logo.png" alt="VStudio Logo" />
+          <img src={Logo} alt="VStudio Logo" />
         </div>
         <div className={`hamburger ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
           <div className="bar"></div>
@@ -42,6 +44,9 @@ const Header = () => {
           </ul>
         </nav>
         <div className="header-buttons">
+          <a href="https://www.instagram.com/your-instagram-handle" target="_blank" rel="noopener noreferrer" className="instagram-icon">
+            <i className="fab fa-instagram"></i>
+          </a>
           <Link to="/contact" className="hire-us-button">Hire Us</Link>
         </div>
       </header>

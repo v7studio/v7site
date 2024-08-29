@@ -27,14 +27,14 @@
 
 .hero-sections h2 {
   font-size: 2rem;
-  color: #78f8f8;
+  color: white;
   margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 1.5px;
 }
 
 .hero-sections h1{
-  color: #78f8f8;
+  color: white;
 }
 
 .packages-container {

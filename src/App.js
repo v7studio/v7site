@@ -7,23 +7,23 @@ import AboutSection from './components/AboutSection';
 import ContactUs from './components/ContactUs'; 
 import Gallery from './components/GalleryPage';
 import PortfolioPage from './components/PortfolioPage';
-import PortfolioDetailsPage from './components/PortfolioDetailsPage'; // Import the new PortfolioDetailsPage component
-import Homepage from './components/Homepage'; // Desktop version of Homepage
-import MobileHomepage from './components/MobileHomepage'; // Mobile version of Homepage
+import PortfolioDetailsPage from './components/PortfolioDetailsPage'; 
+import Homepage from './components/Homepage'; 
+import MobileHomepage from './components/MobileHomepage'; 
 import ServicesPage from './components/ServicesPage';
 
 function App() {
   const [isDesktop, setIsDesktop] = useState(false);
 
   const checkScreenSize = () => {
-    setIsDesktop(window.innerWidth >= 1024); // 1024px is the breakpoint for desktop devices
+    setIsDesktop(window.innerWidth >= 1024); 
   };
 
   useEffect(() => {
-    checkScreenSize(); // Check screen size on initial load
-    window.addEventListener('resize', checkScreenSize); // Add resize listener
+    checkScreenSize(); 
+    window.addEventListener('resize', checkScreenSize); 
 
-    return () => window.removeEventListener('resize', checkScreenSize); // Cleanup on unmount
+    return () => window.removeEventListener('resize', checkScreenSize); 
   }, []);
 
   return (
@@ -38,6 +38,10 @@ function App() {
         <Route path="/portfolio/:portfolioId" element={<PortfolioDetailsPage />} /> 
         <Route path="/services" element={<ServicesPage />} />
       </Routes>
+      {/* WhatsApp Icon */}
+      <a href="https://wa.me/your-number" target="_blank" rel="noopener noreferrer" className="whatsapp-float">
+        <i className="fab fa-whatsapp"></i>
+      </a>
     </Router>
   );
 }

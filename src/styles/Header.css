@@ -37,6 +37,16 @@
   gap: 10px;
 }
 
+.instagram-icon {
+  font-size: 24px;
+  color: #C13584;
+  transition: color 0.3s ease;
+}
+
+.instagram-icon:hover {
+  color: #E1306C;
+}
+
 .hire-us-button {
   padding: 10px 20px;
   border: 2px solid #a4b7a6;
@@ -61,13 +71,15 @@
   border-radius: 2px;
 }
 
+/* Media Query for Mobile View */
 @media screen and (max-width: 768px) {
   .header {
-    flex-direction: row; /* Ensures the header elements are in a row */
-    justify-content: space-between; /* Adjust space between logo and hamburger */
-    padding: 10px; /* Adjust padding for smaller screens */
+    flex-direction: row; 
+    justify-content: space-between; 
+    padding: 10px; 
     width: auto;
   }
+
   .navigation {
     position: absolute;
     top: 60px;
@@ -76,34 +88,34 @@
     background-color: #F0EEF3;
     flex-direction: column;
     align-items: center;
-    gap: 15px; /* Increased gap for better spacing */
-    padding: 20px 0; /* Added padding for better spacing */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for visual separation */
+    gap: 15px; 
+    padding: 20px 0; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.3s ease, visibility 0.3s ease;
-    z-index: 9; /* Ensure it's above other elements */
+    z-index: 9; 
   }
 
   .navigation ul {
-    flex-direction: column; /* Stack menu items vertically */
+    flex-direction: column; 
     width: 100%;
     align-items: center;
-    padding: 0; /* Reset padding */
-    margin: 0; /* Reset margin */
+    padding: 0; 
+    margin: 0; 
     gap: 10px;
   }
 
   .navigation ul li {
-    width: 100%; /* Full width for each item */
-    text-align: center; /* Center-align the text */
-    padding: 10px 0; /* Added padding for touch-friendly size */
+    width: 100%; 
+    text-align: center; 
+    padding: 5px 0; 
   }
 
   .navigation ul li a {
-    font-size: 18px; /* Increase font size for mobile */
+    font-size: 18px; 
     padding: 10px 0;
-    width: 100%; /* Full width clickable area */
+    width: 100%; 
     display: block;
     color: #4c5b69;
   }
@@ -113,8 +125,15 @@
     opacity: 1;
   }
 
+  /* Ensure the Instagram icon is visible outside the hamburger menu */
   .header-buttons {
-    display: none;
+    display: flex;
+    position: absolute;
+    top: 25px;
+    right: 60px;
+  }
+  .hire-us-button{
+    padding: 5px 10px;
   }
 
   .hamburger {

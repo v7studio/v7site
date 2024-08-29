@@ -49,10 +49,27 @@
     align-items: center;
     color: white;
     font-size: 1.5rem;
+    flex-direction: column;
 }
 
 .portfolio-page .image-item:hover .overlay {
     opacity: 1;
+}
+
+.portfolio-page .view-gallery-btn {
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 1rem;
+    background-color: #748d75;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.portfolio-page .view-gallery-btn:hover {
+    background-color: #62715f;
 }
 
 .portfolio-page .wedding-package {
@@ -119,4 +136,30 @@
 
 .portfolio-page .package-btn:hover {
     background-color: #62715f;
+}
+
+/* Mobile View Styles */
+@media screen and (max-width: 768px) {
+    .portfolio-page .package-options {
+        display: flex;
+        flex-direction: row; /* Display in a single row */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        scroll-snap-type: x mandatory; /* Carousel snap effect */
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
+        flex-wrap: nowrap;
+    }
+
+    .portfolio-page .package-card {
+        flex: 0 0 80%; /* Take up 80% of the viewport width */
+        scroll-snap-align: start; /* Snap to start of the container */
+    }
+
+    .portfolio-page .overlay {
+        opacity: 1; /* Make the overlay always visible on mobile */
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    .portfolio-page .image-item img {
+        cursor: default; /* Disable image click on mobile */
+    }
 }

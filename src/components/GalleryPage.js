@@ -8,6 +8,8 @@ const GalleryPage = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [showModal, setShowModal] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   useEffect(() => {
     const fetchImages = async () => {
@@ -21,6 +23,12 @@ const GalleryPage = () => {
     };
 
     fetchImages();
+  }, []);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   const filterImages = () => {
@@ -38,44 +46,69 @@ const GalleryPage = () => {
     setSelectedImage(null);
   };
 
+  const toggleDropdown = () => {
+    setDropdownOpen(!dropdownOpen);
+  };
+
+  const handleCategorySelect = (category) => {
+    setSelectedCategory(category);
+    setDropdownOpen(false);
+  };
+
   return (
     <section className="gallery-page">
       <div className="hero-section">
         <h1>Gallery</h1>
       </div>
       <div className="filter-section">
-        <ul>
-          <li 
-            onClick={() => setSelectedCategory('All')} 
-            className={selectedCategory === 'All' ? 'active' : ''}
-          >
-            All
-          </li>
-          <li 
-            onClick={() => setSelectedCategory('Wedding')} 
-            className={selectedCategory === 'Wedding' ? 'active' : ''}
-          >
-            Wedding
-          </li>
-          <li 
-            onClick={() => setSelectedCategory('College Events')} 
-            className={selectedCategory === 'College Events' ? 'active' : ''}
-          >
-            College Events
-          </li>
-          <li 
-            onClick={() => setSelectedCategory('Birthday Events')} 
-            className={selectedCategory === 'Birthday Events' ? 'active' : ''}
-          >
-            Birthday Events
-          </li>
-          <li 
-            onClick={() => setSelectedCategory('Nature')} 
-            className={selectedCategory === 'Nature' ? 'active' : ''}
-          >
-            Nature
-          </li>
-        </ul>
+        {isMobile ? (
+          <div className={`custom-dropdown ${dropdownOpen ? 'open' : ''}`} onClick={toggleDropdown}>
+            <div className="dropdown-selected">
+              <span>{selectedCategory}</span>
+              <span className="arrow-down"></span>
+            </div>
+            <ul className="dropdown-options">
+              <li onClick={() => handleCategorySelect('All')}>All</li>
+              <li onClick={() => handleCategorySelect('Wedding')}>Wedding</li>
+              <li onClick={() => handleCategorySelect('College Events')}>College Events</li>
+              <li onClick={() => handleCategorySelect('Birthday Events')}>Birthday Events</li>
+              <li onClick={() => handleCategorySelect('Nature')}>Nature</li>
+            </ul>
+          </div>
+        ) : (
+          <ul className="filter-list">
+            <li 
+              onClick={() => setSelectedCategory('All')} 
+              className={selectedCategory === 'All' ? 'active' : ''}
+            >
+              All
+            </li>
+            <li 
+              onClick={() => setSelectedCategory('Wedding')} 
+              className={selectedCategory === 'Wedding' ? 'active' : ''}
+            >
+              Wedding
+            </li>
+            <li 
+              onClick={() => setSelectedCategory('College Events')} 
+              className={selectedCategory === 'College Events' ? 'active' : ''}
+            >
+              College Events
+            </li>
+            <li 
+              onClick={() => setSelectedCategory('Birthday Events')} 
+              className={selectedCategory === 'Birthday Events' ? 'active' : ''}
+            >
+              Birthday Events
+            </li>
+            <li 
+              onClick={() => setSelectedCategory('Nature')} 
+              className={selectedCategory === 'Nature' ? 'active' : ''}
+            >
+              Nature
+            </li>
+          </ul>
+        )}
       </div>
       <div className="image-grid">
         {filterImages().map((image, index) => (

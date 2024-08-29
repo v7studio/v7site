@@ -56,7 +56,9 @@ const MobileHomepage = () => {
           </p>
         </div>
         <LazyLoadImage src={experienceImage} alt="Photography Experience" effect="blur" className="mh-experience-image" />
-        <button className="mh-cta-button">Explore Our Portfolio ➔</button>
+        <Link to="/portfolio">
+          <button className="mh-cta-button">Explore Our Portfolio ➔</button>
+        </Link>
       </section>
 
       {/* Mobile Expertise Section */}
@@ -108,7 +110,9 @@ const MobileHomepage = () => {
           <LazyLoadImage src={visionImg3} alt="Vision Image 3" effect="blur" className="mh-vision-img" />
         </div>
         <p>We collaborate closely with you to bring your vision to life.</p>
-        <button className="mh-cta-button">Request a Consultation</button>
+        <Link to="/contact">
+          <button className="mh-cta-button">Request a Consultation</button>
+        </Link>
       </section>
 
       {/* Mobile Gallery Section */}

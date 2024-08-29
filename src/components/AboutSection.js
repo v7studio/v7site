@@ -3,6 +3,7 @@ import '../styles/AboutPage.css'; // Updated CSS file name
 import ProfileImg from '../assets/8.1.jpg';
 import Img1 from '../assets/8.jpg'; // Replace with actual image paths
 import Img2 from '../assets/9.jpg';
+import { Link } from 'react-router-dom';
 
 const AboutPage = () => {
   return (
@@ -18,7 +19,9 @@ const AboutPage = () => {
               Lorem ipsum dolor sit amet consectetur. Rutrum tincidunt consequat nec potenti. Justo molestie amet vulputate aliquam viverra ut viverra lorem.
               Velit tellus vitae massa sed egestas ornare pretium. Donec odio faucibus consectetur feugiat varius.
             </p>
-            <button className="unique-portfolio-button">View Portfolio</button>
+            <Link to="/Gallery">
+              <button className="unique-portfolio-button">View Portfolio</button>
+            </Link>
           </div>
         </div>
       </section>
@@ -37,7 +40,9 @@ const AboutPage = () => {
               Your wedding day is a once-in-a-lifetime event, and choosing the right photographer is essential to preserving its magic for years to come.
               I would be honored to be a part of your special day.
             </p>
-            <button className="unique-book-now-button">Book Now</button>
+            <Link to="/contact">
+              <button className="unique-book-now-button">Book Now</button>
+            </Link>
           </div>
           <div className="unique-crafting-images">
             <img src={Img1} alt="Wedding 1" className="unique-crafting-image unique-crafting-image-1" />

@@ -38,8 +38,7 @@ const PortfolioPage = () => {
         {portfolios.map((portfolio, index) => (
           <div 
             key={index} 
-            className="image-item" 
-            onClick={() => openPortfolioDetails(portfolio.id)}
+            className="image-item"
           >
             <img 
               src={portfolio.mainImageUrl} 
@@ -47,8 +46,17 @@ const PortfolioPage = () => {
               loading="lazy"
               srcSet={`${portfolio.mainImageUrl}?w=300 300w, ${portfolio.mainImageUrl}?w=600 600w`}
               sizes="(max-width: 600px) 300px, 600px"
+              onClick={() => openPortfolioDetails(portfolio.id)} // Clickable image for desktop view
             />
-            <div className="overlay">{portfolio.clientName}</div>
+            <div className="overlay">
+              <span>{portfolio.clientName}</span>
+              <button 
+                className="view-gallery-btn" 
+                onClick={() => openPortfolioDetails(portfolio.id)}
+              >
+                View Gallery
+              </button>
+            </div>
           </div>
         ))}
       </div>
@@ -59,21 +67,27 @@ const PortfolioPage = () => {
         <h3>Special Wedding Package</h3>
         <div className="package-options">
           <div className="package-card">
-            <h4>Basic</h4>
-            <p>$25 / month</p>
-            <p>30% Off for Beginners</p>
+            <h4>Gold Package</h4>
+            <p>A magazine is a periodical publication</p>
+            <p>INR 75000</p>
             <button className="package-btn">Get Started</button>
           </div>
           <div className="package-card popular">
-            <h4>Standard</h4>
-            <p>$35 / month</p>
-            <p>Most popular</p>
+            <h4>Silver Package</h4>
+            <p>A magazine is a periodical publication</p>
+            <p>INR 60000</p>
             <button className="package-btn">Get Started</button>
           </div>
           <div className="package-card">
-            <h4>Premium</h4>
-            <p>$50 / month</p>
-            <p>10% Off for Yoga Class</p>
+            <h4>Bronze Package</h4>
+            <p>A magazine is a periodical publication</p>
+            <p>INR 40000</p>
+            <button className="package-btn">Get Started</button>
+          </div>
+          <div className="package-card">
+            <h4>Other Package</h4>
+            <p>Baby shoot, Model shoot, Other shoot</p>
+            <p>INR 10000</p>
             <button className="package-btn">Get Started</button>
           </div>
         </div>

@@ -84,7 +84,9 @@ const Homepage = () => {
             With our state-of-the-art equipment and artistic vision, we transform ordinary moments into 
             extraordinary memories. Our talented photographers...
           </p>
-          <button className="cta-buttons">Explore Our Portfolio ➔</button>
+          <Link to="/portfolio">
+            <button className="cta-buttons">Explore Our Portfolio ➔</button>
+          </Link>
         </div>
       </section>
 
@@ -163,7 +165,9 @@ const Homepage = () => {
             At V Studio, we understand that every client has unique needs and desires.
             That's why we collaborate closely with you, ensuring that your vision is brought to life.
           </p>
-          <button className="consultation-button">Request a Consultation</button>
+          <Link to="/contact">
+            <button className="consultation-button">Request a Consultation</button>
+          </Link>
         </div>
         <div className="vision-images">
           <div className="image-container image-container-1">
