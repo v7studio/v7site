@@ -15,9 +15,9 @@ import creativityImg2 from '../assets/9.jpg';
 import creativityImg3 from '../assets/8.jpg';
 import creativityImg4 from '../assets/9.jpg';
 import creativityImg5 from '../assets/10.jpg';
-import visionImg1 from '../assets/11.jpg';
+import visionImg1 from '../assets/20.jpg';
 import visionImg2 from '../assets/13.jpg';
-import visionImg3 from '../assets/17.jpg';
+import visionImg3 from '../assets/23.jpg';
 import galleryImg1 from '../assets/1.jpg';
 import galleryImg2 from '../assets/13.jpg';
 import galleryImg3 from '../assets/12.jpg';
@@ -95,8 +95,8 @@ const MobileHomepage = () => {
           <LazyLoadImage src={creativityImg1} alt="Gallery Image 1" effect="blur" className="mh-gallery-img" />
           <LazyLoadImage src={creativityImg2} alt="Gallery Image 2" effect="blur" className="mh-gallery-img" />
           <LazyLoadImage src={creativityImg3} alt="Gallery Image 3" effect="blur" className="mh-gallery-img" />
-          <LazyLoadImage src={creativityImg4} alt="Gallery Image 4" effect="blur" className="mh-gallery-img" />
-          <LazyLoadImage src={creativityImg5} alt="Gallery Image 5" effect="blur" className="mh-gallery-img" />
+          {/* <LazyLoadImage src={creativityImg4} alt="Gallery Image 4" effect="blur" className="mh-gallery-img" />
+          <LazyLoadImage src={creativityImg5} alt="Gallery Image 5" effect="blur" className="mh-gallery-img" /> */}
         </div>
         <p>With years of experience, we've captured countless moments and crafted stunning visuals, earning awards and recognition.</p>
       </section>
@@ -105,9 +105,9 @@ const MobileHomepage = () => {
       <section className="mh-vision-expertise-section">
         <h2>Your Vision, Our Expertise</h2>
         <div className="mh-vision-images">
-          <LazyLoadImage src={visionImg1} alt="Vision Image 1" effect="blur" className="mh-vision-img" />
-          <LazyLoadImage src={visionImg2} alt="Vision Image 2" effect="blur" className="mh-vision-img" />
-          <LazyLoadImage src={visionImg3} alt="Vision Image 3" effect="blur" className="mh-vision-img" />
+          <LazyLoadImage src={visionImg1} alt="Vision Image 1" effect="blur" className="mh-vision-img img-1" />
+          <LazyLoadImage src={visionImg2} alt="Vision Image 2" effect="blur" className="mh-vision-img img-2" />
+          <LazyLoadImage src={visionImg3} alt="Vision Image 3" effect="blur" className="mh-vision-img img-3" />
         </div>
         <p>We collaborate closely with you to bring your vision to life.</p>
         <Link to="/contact">

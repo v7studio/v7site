@@ -24,11 +24,13 @@
   color: #4c5b69;
   font-weight: 600;
   font-size: 16px;
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
 
-.navigation ul li a.active {
-  color: #34404a;
-  font-weight: bold;
+
+.navigation ul li a:hover {
+  color: #34404a; /* Color for active link and hover state */
+  font-weight: bold; /* Bold text for active link */
 }
 
 .header-buttons {

@@ -182,7 +182,7 @@ section {
 
 .mh-creativity-images {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
 
@@ -219,11 +219,29 @@ section {
   object-fit: cover;
 }
 
+/* Specific Image Classes */
+.img-1 {
+  position: relative;
+  top: 40px;
+}
+
+.img-2 {
+  position: relative;
+  top: 40px;
+}
+
+.img-3 {
+  position: relative;
+  top: -100px;
+}
+
 .mh-vision-expertise-section p {
   margin-top: 20px;
   font-size: 1rem;
   line-height: 1.6;
   color: #555;
+  position: relative;
+  top: -30px;
 }
 
 .mh-vision-expertise-section button {
@@ -236,6 +254,8 @@ section {
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
   margin-top: 20px;
+  position: relative;
+  top: -30px;
 }
 
 .mh-vision-expertise-section button:hover {
