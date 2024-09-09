@@ -50,7 +50,7 @@ const Homepage = () => {
           <h1>capture </h1>
           <h1>the moments</h1>
           <p>
-            At V Studios, we specialize in capturing life's most cherished moments 
+            At V7Studios, we specialize in capturing life's most cherished moments 
             and turning them into timeless works of art. Our team of passionate 
             photographers is dedicated to telling stories through the lens, ensuring 
             that every shot encapsulates the essence of your unique journey.
@@ -138,7 +138,7 @@ const Homepage = () => {
           <p>
             With over a year of experience, we have captured countless moments and crafted stunning visuals. 
             Our team's dedication and passion have led to numerous awards and recognition. 
-            Join the growing number of satisfied clients who have experienced the magic VStudio.
+            Join the growing number of satisfied clients who have experienced the magic V7Studio.
           </p>
           <div className="stats">
             <div className="stat-item">
@@ -162,7 +162,7 @@ const Homepage = () => {
         <div className="vision-content">
           <h2>Your Vision, Our <br/>Expertise</h2>
           <p>
-            At V Studio, we understand that every client has unique needs and desires.
+            At V7Studio, we understand that every client has unique needs and desires.
             That's why we collaborate closely with you, ensuring that your vision is brought to life.
           </p>
           <Link to="/contact">

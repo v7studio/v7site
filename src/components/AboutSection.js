@@ -16,8 +16,8 @@ const AboutPage = () => {
           <div className="unique-text-container">
             <h1 className="unique-about-title">My Story</h1>
             <p className="unique-about-text">
-              Lorem ipsum dolor sit amet consectetur. Rutrum tincidunt consequat nec potenti. Justo molestie amet vulputate aliquam viverra ut viverra lorem.
-              Velit tellus vitae massa sed egestas ornare pretium. Donec odio faucibus consectetur feugiat varius.
+              At V7Studio, we believe that every moment is worth capturing, and every story deserves to be told. What started as a small passion for photography has grown into a full-fledged studio dedicated to bringing your memories to life. 
+              With years of experience in capturing weddings, portraits, and events, our goal is to not just take photos, but to craft images that resonate with emotion and authenticity.
             </p>
             <Link to="/Gallery">
               <button className="unique-portfolio-button">View Portfolio</button>
