@@ -44,7 +44,7 @@ const Header = () => {
           </ul>
         </nav>
         <div className="header-buttons">
-          <a href="https://www.instagram.com/your-instagram-handle" target="_blank" rel="noopener noreferrer" className="instagram-icon">
+          <a href="https://www.instagram.com/v7_studio__" target="_blank" rel="noopener noreferrer" className="instagram-icon">
             <i className="fab fa-instagram"></i>
           </a>
           <Link to="/contact" className="hire-us-button">Hire Us</Link>

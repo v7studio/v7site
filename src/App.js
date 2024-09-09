@@ -39,7 +39,7 @@ function App() {
         <Route path="/services" element={<ServicesPage />} />
       </Routes>
       {/* WhatsApp Icon */}
-      <a href="https://wa.me/your-number" target="_blank" rel="noopener noreferrer" className="whatsapp-float">
+      <a href="https://wa.me/8438016782" target="_blank" rel="noopener noreferrer" className="whatsapp-float">
         <i className="fab fa-whatsapp"></i>
       </a>
     </Router>
