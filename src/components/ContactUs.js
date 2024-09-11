@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { db } from '../firebase'; // Import Firestore
 import '../styles/ContactUs.css'; 
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+// import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { collection, addDoc } from 'firebase/firestore'; // Firestore methods
 
 const ContactUs = () => {
