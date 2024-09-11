@@ -102,9 +102,9 @@ const ContactUs = () => {
           {error && <p className="error-message">{error}</p>}
         </div>
       </div>
-      <div className="contact-map">
+      {/* <div className="contact-map">
         <LazyLoadImage src="path_to_your_map_image.png" alt="Our Location" />
-      </div>
+      </div> */}
     </section>
   );
 };
