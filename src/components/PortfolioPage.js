@@ -67,7 +67,7 @@ const PortfolioPage = () => {
         <h3>Special Wedding Package</h3>
         <div className="package-options">
           <div className="package-card">
-            <h4>Gold Package</h4>
+            <h4>Gold Package !</h4>
             <p>A magazine is a periodical publication</p>
             <p>INR 75000</p>
             <button className="package-btn">Get Started</button>
