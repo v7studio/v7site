@@ -48,11 +48,11 @@ const ContactUs = () => {
           </div>
           <div className="info-item">
             <i className="fas fa-phone"></i>
-            <p>Phone: (123) 456-7890</p>
+            <p>Phone: 6379916782</p>
           </div>
           <div className="info-item">
             <i className="fas fa-envelope"></i>
-            <p>Email: contact@example.com</p>
+            <p>Email: v7studio007@gmail.com</p>
           </div>
         </div>
         <div className="contact-form">
