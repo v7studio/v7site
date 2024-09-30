@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { db } from '../firebase'; // Import Firestore
 import '../styles/ContactUs.css'; 
-// import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { collection, addDoc } from 'firebase/firestore'; // Firestore methods
 
 const ContactUs = () => {
@@ -44,15 +43,27 @@ const ContactUs = () => {
           <p>We'd love to hear from you. Please drop us a message or reach out to us using the details below.</p>
           <div className="info-item">
             <i className="fas fa-map-marker-alt"></i>
-            <p>Address: 1234 Main St, Anytown, USA</p>
+            <p>
+              <a
+                href="https://maps.app.goo.gl/z9BqhSkRSodv7kXq8"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Address: V7 STUDIO, No:46,P&K West Gate, Saravanampatti, Coimbatore-641035
+              </a>
+            </p>
           </div>
           <div className="info-item">
             <i className="fas fa-phone"></i>
-            <p>Phone: 6379916782</p>
+            <p>
+              <a href="tel:+916379916782">Phone: 6379916782</a>
+            </p>
           </div>
           <div className="info-item">
             <i className="fas fa-envelope"></i>
-            <p>Email: v7studio007@gmail.com</p>
+            <p>
+              <a href="mailto:v7studio007@gmail.com">Email: v7studio007@gmail.com</a>
+            </p>
           </div>
         </div>
         <div className="contact-form">
@@ -102,9 +113,6 @@ const ContactUs = () => {
           {error && <p className="error-message">{error}</p>}
         </div>
       </div>
-      {/* <div className="contact-map">
-        <LazyLoadImage src="path_to_your_map_image.png" alt="Our Location" />
-      </div> */}
     </section>
   );
 };
