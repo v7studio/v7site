@@ -163,7 +163,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  /* padding: 20px; */
   cursor: zoom-out; /* Indicate that clicking will close the modal */
 }
 

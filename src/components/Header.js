@@ -26,7 +26,9 @@ const Header = () => {
 
       <header className="header">
         <div className="logo">
-          <img src={Logo} alt="VStudio Logo" />
+          <Link to="/" onClick={closeMenu}>
+            <img src={Logo} alt="VStudio Logo" />
+          </Link>
         </div>
         <div className={`hamburger ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
           <div className="bar"></div>

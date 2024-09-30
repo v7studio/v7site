@@ -6,19 +6,82 @@
     justify-content: center;
     align-items: center;
     font-size: 2.5rem;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
+/* Image Grid Styles */
 .portfolio-details-page .image-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
     padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px; /* Ensures a max-width for the grid */
 }
 
 .portfolio-details-page .image-item img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 10px; /* Smoother rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for better image depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation for hover effect */
+}
+
+.portfolio-details-page .image-item img:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+    .portfolio-details-page .hero-section {
+        font-size: 2rem;
+        padding: 10px;
+    }
+
+    .portfolio-details-page .image-grid {
+        padding: 15px;
+        gap: 12px;
+    }
+
+    .portfolio-details-page .image-item img {
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-details-page .hero-section {
+        font-size: 1.8rem;
+        height: 25vh; /* Adjust hero section height for smaller screens */
+    }
+
+    .portfolio-details-page .image-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Smaller min width for grid items */
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .portfolio-details-page .image-item img {
+        border-radius: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-details-page .hero-section {
+        font-size: 1.5rem;
+        height: 20vh; /* Further adjust for very small screens */
+    }
+
+    .portfolio-details-page .image-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* More compact grid on mobile */
+        gap: 8px;
+    }
+
+    .portfolio-details-page .image-item img {
+        border-radius: 5px;
+    }
 }
