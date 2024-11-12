@@ -62,7 +62,7 @@ const ContactUs = () => {
           <div className="info-item">
             <i className="fas fa-envelope"></i>
             <p>
-              <a href="mailto:v7studio007@gmail.com">Email: v7studio007@gmail.com</a>
+              <a href="mailto:v7studiophoto@gmail.com">Email: v7studiophoto@gmail.com</a>
             </p>
           </div>
         </div>
